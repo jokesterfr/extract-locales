@@ -1,0 +1,34 @@
+{
+  "name": "extract-locales",
+  "version": "1.0.0",
+  "description": "A locale extractor for web applications",
+  "license": "MIT",
+  "repository": "jokesterfr/extract-locales",
+  "author": {
+    "name": "Clément Désiles",
+    "email": "main@jokester.fr",
+    "url": "http://jokester.fr"
+  },
+  "main": "index.js",
+  "bin": {
+    "extract-locales": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "standard",
+    "examples": "npm run example:cli && npm run example:prog && echo '--> see the result in lang/ folder'",
+    "example:cli": "./cli.js --locales fr-FR --html ./examples/cli-*.html --js ./examples/cli-*.js --output lang/cli",
+    "example:prog": "node ./examples/prog-sample.js"
+  },
+  "dependencies": {
+    "bcp47-validate": "1.0.0",
+    "commander": "2.15.1",
+    "esprima": "4.0.0",
+    "globby": "8.0.1",
+    "js-yaml": "3.11.0",
+    "jsdom": "11.10.0"
+  },
+  "devDependencies": {
+    "standard": "11.0.1"
+  }
+}
