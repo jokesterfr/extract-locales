@@ -73,7 +73,7 @@ extractor.output('./lang/')
 
 ## CLI documentation
 
-```js
+```sh
 $ ./cli.js --help
 
   Usage: extract-locales [options]
